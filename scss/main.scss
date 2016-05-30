@@ -1,10 +1,25 @@
+// Bootstrap Variables
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap";
 
-.hours::after,
-.minutes::after{
-  content: ":";
+// install bootstrap
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+body{
+  background-color: rgb(0, 159, 255);
+}
+.color-clock{
+  max-width: 100%;
 }
 
-.start{
-  background-color: green;
-  outline: none;
+// .hours::after,
+// .minutes::after{
+//   content: ":";
+// }
+
+.elapsed-time{
+  margin-top: 300px;
+  text-align: center;
+  font-size: 80px;
+
 }
