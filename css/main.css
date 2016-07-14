@@ -5809,15 +5809,22 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-body {
-  background-color: #009fff; }
-
-.color-clock {
-  max-width: 100%; }
-
-.elapsed-time {
-  margin-top: 300px;
+.time-passed {
+  font-size: 100px;
   text-align: center;
-  font-size: 80px; }
+  margin-top: 200px;
+  margin-bottom: 30px; }
+
+.start {
+  margin-left: 200px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #00ad66;
+  border: none; }
+
+.reset {
+  border-radius: 5px;
+  background-color: #f13d34;
+  border: none; }
 
 /*# sourceMappingURL=main.css.map */

@@ -10,9 +10,17 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="color-clock">
+        <div class="col-md-offset-3 col-md-6 color-clock">
 
-          <div id="clock-display" class="col-md-offset-4 col-md-5 elapsed-time"></div>
+          <h2 onmouseover="displayHexValue()" onmouseout="displayTimeValue()" class="time-passed">
+            <span class="hours">00</span>
+            <span class="minutes">00</span>
+            <span class="seconds">00</span>
+            <div class="line"></div>
+          </h2>
+
+          <button class="start" id="start-button">Start Clock</button>
+          <button class="reset">Reset</button>
 
         </div>
       </div>
