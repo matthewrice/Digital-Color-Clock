@@ -8,6 +8,7 @@
      * it, create a new instance.
      */
     var time = new Date();
+    console.log(time);
     var clock = document.getElementById('clock');
 
 
@@ -38,6 +39,7 @@
      * clock, create a string by concatenating them together.
      */
     var currentTime = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+    console.log(currentTime);
 
     /*
      * populate the html span in the DOM by retrieving the child text node by setting
@@ -46,19 +48,25 @@
      */
     document.getElementById("clock").firstChild.nodeValue = currentTime;
 
+    // convert the time to a hex number.
     var h = currentHours.toString(16);
     var m = currentMinutes.toString(16);
     var s = currentSeconds.toString(16);
-   // console.log(h + m + s);
-    document.body.style.backgroundColor = '#0' + s;
 
+    /*
+     * update the background color of the page using a hexideciaml color.
+     */
+    document.body.style.backgroundColor = '#0' + s;
+    console.log(document.body.style.backgroundColor);
+
+    // display the generated color's hex value on hover
     if (clock.parentElement.querySelector(':hover') === clock) {
       var x = s[0];
       var y = s[1];
 
       clock.textContent = '#00:' + x + x + ':' + y + y;
     } else {
-      clock.textContent = hour + ":" + minutes + ":" + seconds;
+      clock.textContent = currentHours + ":" + currentMinutes + ":" + currentSeconds;
     }
   }
 
@@ -73,8 +81,10 @@
       progressBarWidth.style.width;
     } else {
       counter = (seconds/60) * 100;
+      console.log(counter);
       progressBarWidth.style.width = counter + "%";
     }
+    console.log(progressBarWidth);
   }
 
   // update the clock every second.
