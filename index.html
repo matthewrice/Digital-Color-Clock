@@ -4,24 +4,20 @@
   <head>
     <meta charset="utf-8">
     <title>2.4-color-clock</title>
+    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css"/>
   </head>
 
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-offset-3 col-md-6 color-clock">
-
-          <h2 onmouseover="displayHexValue()" onmouseout="displayTimeValue()" class="time-passed">
-            <span class="hours">00</span>
-            <span class="minutes">00</span>
-            <span class="seconds">00</span>
-            <div class="line"></div>
-          </h2>
-
-          <button class="start" id="start-button">Start Clock</button>
-          <button class="reset">Reset</button>
-
+        <div class="col-md-offset-2 col-md-8 color-clock">
+          <!-- add &nbsp inside the span tag (element) in order to create a child
+          text node. -->
+          <span id="clock" class="time-passed">&nbsp</span>
+          <div id="progress-bar">
+            <div id="my-progress"></div>
+          </div>
         </div>
       </div>
     </div>
