@@ -65,9 +65,7 @@
       var y = s[1];
 
       clock.textContent = '#00:' + x + x + ':' + y + y;
-    } else {
-      clock.textContent = currentHours + ":" + currentMinutes + ":" + currentSeconds;
-    }
+    } 
   }
 
   // update a percentage of the progress bar as seconds go from 0 to 60.
